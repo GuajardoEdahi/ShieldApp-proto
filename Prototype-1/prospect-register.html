@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.jpg"/>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/forms/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/forms/form-style.css">
+
+    <title>Prospecto</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-20">
+          <div class="form h-100">
+            <h3>Registrar Prospecto</h3>
+            <form class="mb-3" method="post" id="contactForm" name="contactForm">
+              <div class="row">
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Medio *</label>
+                    <select name="select" id="select" class="form-control" name="name" id="medio">
+                      <option value="0">Por favor seleccione</option>
+                      <option value="1">WhatsApp</option>
+                      <option value="2">Web</option>
+                      <option value="3">Recomendado</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Empresa *</label>
+                  <input type="text" class="form-control" name="name" id="empresa" placeholder="Empresa">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">RFC *</label>
+                  <input type="text" class="form-control" name="name" id="rfc" placeholder="RFC">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Código Postal *</label>
+                  <input type="text" class="form-control" name="name" id="cp" placeholder="C.P">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Estado *</label>
+                  <input type="text" class="form-control" name="name" id="estado" placeholder="Estado">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Municipio *</label>
+                  <input type="text" class="form-control" name="name" id="municipio" placeholder="Municipio">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Nombre de contacto *</label>
+                  <input type="text" class="form-control" name="name" id="com_contacto" placeholder="Contacto">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Teléfono de contacto *</label>
+                  <input type="text" class="form-control" name="name" id="telefono" placeholder="Teléfono">
+                </div>
+                <div class="col-md-4 form-group mb-5">
+                  <label for="" class="col-form-label">Correo de contacto *</label>
+                  <input type="text" class="form-control" name="email" id="email"  placeholder="e-mail">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-12 form-group mb-5">
+                  <label for="message" class="col-form-label">Observciones</label>
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="4"  placeholder="Observaciones"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="submit" value="Registrar" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div> 
+            <div id="form-message-success">
+              Your message was sent, thank you!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
