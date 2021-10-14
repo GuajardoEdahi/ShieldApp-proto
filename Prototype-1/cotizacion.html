@@ -1,0 +1,544 @@
+
+<html id="cotizacion">
+	<head>
+		<meta charset="utf-8">
+		<title>Cotizacion</title>
+		<link rel="stylesheet" href="./css/forms/cotizacion.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="./js/cotizacion.js"></script>
+		<script src="./js/generatePDF.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+		
+	</head>
+	<body id='cotizacion'>
+		<header>
+			<h1>Cotizacion</h1>
+			
+		</header>
+		<article>
+			<h1>Cliente</h1>
+
+			<address>
+				<p>Servicio de Cotizacion</p>
+			</address>
+
+			<div>
+				
+			</div>
+
+			
+            
+			<table class="meta">
+				<tr>
+					<th><span contenteditable>Fecha</span></th>
+					<td><span contenteditable>14 de Octubre del 2021</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Total</span></th>
+					<td><span id="prefix" contenteditable>$</span><span>0.00</span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span contenteditable>Producto</span></th>
+						<th><span contenteditable>Servicio</span></th>
+						<th><span contenteditable>Precio Unitario</span></th>
+						<th><span contenteditable>Cantidad</span></th>
+						<th><span contenteditable>Precio</span></th>
+					</tr>
+				</thead>
+				<tbody>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>12 x 12 5 días a la semana (Sueldo $8,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>17600</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>12 x 12 6 días a la semana (Sueldo $8,000 Mensual) Factor 1.2</span></td>
+						<td><span data-prefix>$</span><span contenteditable>21120.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>12 X 12 7 días a la semana (Sueldo $8,000 Mensual) Factor 1.4</span></td>
+						<td><span data-prefix>$</span><span contenteditable>24640</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>24 X 24 (Sueldo $8,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>17600</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>12 x 12 Jefe de Turno (Sueldo de $10,000)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>22000</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>24 X 24 (Sueldo $8,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>33000</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>12 X 12 Jefe de Servicio (Sueldo $12,500)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>26400</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>24 x 24  Jefe de Turno (Sueldo de $10,000)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>22000</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>12 x 12 Jefe de Servicio (Sueldo $12,500)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>33000</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>24 x 24  Jefe de Servicio (Sueldo $12,500)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>27500</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-blue"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados</span></td>
+						<td><span contenteditable>Transporte de personal Armado
+                             o No Armado a punto foráneo (precio por km recorrido)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>5.78</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-green"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados(por evento)</span></td>
+						<td><span contenteditable>Intramuro No Armado de 12 a 24 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>1650</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-green"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados(por evento)</span></td>
+						<td><span contenteditable>Intramuro No Armado  de 1 a 12 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>2860</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-green"><a class="cut">-</a><span contenteditable>Guardias intramuros no armados(por evento)</span></td>
+						<td><span contenteditable>Transporte de personal Armado o No Armado a punto foráneo (precio por km recorrido)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>5.8</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>24 x 24 Guardia Armado con Arma corta o larga  (Sueldo $9,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>24750</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>24 x 24 Guardia Armado con  2 Armas corta y larga (Sueldo $9,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>31350</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>12 X 12 Guardia Armado con Arma corta o larga  (Sueldo $9,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>29700</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>12 x 12  Guardia Armado con  2 Armas corta y larga (Sueldo $9,000 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>36300</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>12X12 Jefe de Turno 1 Arma corta (Sueldo $11,200 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>30800</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>12 X 12 Jefe de Servicio 1 Arma corta (Sueldo $12,800 Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>35200</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-orange"><a class="cut">-</a><span contenteditable>Guardias intramuros armados</span></td>
+						<td><span contenteditable>Transporte de personal Armado o No Armado a punto foráneo (precio por km recorrido)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>5.78</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-red"><a class="cut">-</a><span contenteditable>Guardias intramuro armados (por evento)</span></td>
+						<td><span contenteditable>Intramuro 1 Arma (corta o larga) de 1 a 12 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>2860</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-red"><a class="cut">-</a><span contenteditable>Guardias intramuro armados (por evento)</span></td>
+						<td><span contenteditable>Intramuro 1 Arma (corta o larga) de 12 a 24 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>5720</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-red"><a class="cut">-</a><span contenteditable>Guardias intramuro armados (por evento)</span></td>
+						<td><span contenteditable>Intramuro 2 Armas (corta y larga) de 1 a 12 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>3630</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-red"><a class="cut">-</a><span contenteditable>Guardias intramuro armados (por evento)</span></td>
+						<td><span contenteditable>Intramuro 2 Armas (corta y larga) de 12 a 24 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>11440</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-red"><a class="cut">-</a><span contenteditable>Guardias intramuro armados (por evento)</span></td>
+						<td><span contenteditable>Intramuro 2 Armas (corta y larga) de 12 a 24 Horas</span></td>
+						<td><span data-prefix>$</span><span contenteditable>11440</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-red"><a class="cut">-</a><span contenteditable>Guardias intramuro armados (por evento)</span></td>
+						<td><span contenteditable>Transporte de personal Armado o No Armado a punto foráneo (precio por km recorrido)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>5.8</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+					<tr>
+						<td class="td-aqua"><a class="cut">-</a><span contenteditable>Escolta Asimilado o Administrado (Tipo A)</span></td>
+						<td><span contenteditable>Escolta A con un arma corta <br>
+                            (Precios bajos: Sonora, Sinaloa, Chihuahua, Veracruz, Chiapas, Oaxaca y Guerrero)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>7260.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-aqua"><a class="cut">-</a><span contenteditable>Escolta Asimilado o Administrado (Tipo A)</span></td>
+						<td><span contenteditable>Escolta A con un arma corta <br>
+                            (Precios medios: Guanajuato, Querétaro, Jalisco, Aguascalientes, San Luis Potosí, Nuevo León)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>8470.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-aqua"><a class="cut">-</a><span contenteditable>Escolta Asimilado o Administrado (Tipo A)</span></td>
+						<td><span contenteditable>Escolta A con un arma corta <br>
+                            (Precios altos: Cd. de México, Estado de México, Quintana Roo, Puebla y Morelos)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>10890.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-aqua"><a class="cut">-</a><span contenteditable>Escolta Asimilado o Administrado (Tipo A)</span></td>
+						<td><span contenteditable>Escolta Administrado  Tipo BSM 1 Arma corta (Salario Mínimo Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>14520.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-aqua"><a class="cut">-</a><span contenteditable>Escolta Asimilado o Administrado (Tipo A)</span></td>
+						<td><span contenteditable>ESCOLTA Administrado  Tipo BSM 2 Armas corta y larga (Salario Mínimo Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>20520.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-pink"><a class="cut">-</a><span contenteditable>Escolta organico o Tipo B (Shield)</span></td>
+						<td><span contenteditable>Escolta Administrado  Tipo BSM 2 Armas corta y larga (Salario Mínimo Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>37400.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-pink"><a class="cut">-</a><span contenteditable>Escolta organico o Tipo B (Shield)</span></td>
+						<td><span contenteditable>Escolta Administrado  Tipo BSM 2 Armas corta y larga (Salario Mínimo Mensual)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>48400.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-pink"><a class="cut">-</a><span contenteditable>Escolta organico o Tipo B (Shield)</span></td>
+						<td><span contenteditable>Escolta Tipo B, O Escolta Shield, 1 Arma corta (ejemplo de un Sueldo de $13,600 Mensual)
+                            Sueldo neto de 14,000.00</span></td>
+						<td><span data-prefix>$</span><span contenteditable>20520.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Custodio Jefe de Servicio 1 Arma (corta)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>39,325</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Kilometro Recorrido </span></td>
+						<td><span data-prefix>$</span><span contenteditable>34.49</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Auto Sedán (March Active TM AC) Mes (No incluye Gasolina) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>30250</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Auto Pick Up (Hilux / NP300 / L200 4x2 Gasolina Doble Cabina) Mes (No incluye Gasolina) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>50820</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Auto Pick Up (Hilux  / NP300 / L200 4x4 Gasolina/Diesel Doble Cabina) Mes (No incluye Gasolina) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>51425</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Moto Doble Proposito 250 CC (No incluye Gasolina) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>18150</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-gray"><a class="cut">-</a><span contenteditable>Custodias</span></td>
+						<td><span contenteditable>Cuatrimoto Honda Modelo Reciente 150 CC 4X2 (No incluye Gasolina) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>27104</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de Nómina </span></td>
+						<td><span contenteditable>Servicio de Recolección de Valores </span></td>
+						<td><span data-prefix>$</span><span contenteditable>423.50</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de Nómina </span></td>
+						<td><span contenteditable>Servicio de Entrega de Valores (este concepto se cobra cuando la entrega es al dia siguiente de la recolección) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>423.50</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de Nómina </span></td>
+						<td><span contenteditable>Cuota de Riesgo por Millar Trasladado </span></td>
+						<td><span data-prefix>$</span><span contenteditable>4.24</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de nómina </span></td>
+						<td><span contenteditable>Cambio de Cheque </span></td>
+						<td><span data-prefix>$</span><span contenteditable>1210</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de nómina </span></td>
+						<td><span contenteditable>Ensobrado (precio por sobre) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>18.15</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de nómina </span></td>
+						<td><span contenteditable>Pago Físico de Nómina (100 sobres por hora) </span></td>
+						<td><span data-prefix>$</span><span contenteditable>2750</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de nómina </span></td>
+						<td><span contenteditable>Pago de Nómina a Granel </span></td>
+						<td><span data-prefix>$</span><span contenteditable>2750</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de nómina </span></td>
+						<td><span contenteditable>Custodia por hora en Unidad Blindada </span></td>
+						<td><span data-prefix>$</span><span contenteditable>2750</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-blue"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                           Precios para el servicio integral de nómina </span></td>
+						<td><span contenteditable>Km recorrido en un solo sentido </span></td>
+						<td><span data-prefix>$</span><span contenteditable>18.5</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Envase Segurisello Grande 33*44, Calibre 400</span></td>
+						<td><span data-prefix>$</span><span contenteditable>15.73</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Envase Segurisello Mediano 26*35, Calibre 300</span></td>
+						<td><span data-prefix>$</span><span contenteditable>13.31</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Envase Segurisello Chico 20*30, Calibre 300</span></td>
+						<td><span data-prefix>$</span><span contenteditable>10.89</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Bolsa Morrallera Grande 30*50, Calibre 600</span></td>
+						<td><span data-prefix>$</span><span contenteditable>15.73</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Machihembradora</span></td>
+						<td><span data-prefix>$</span><span contenteditable>1210</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Sello de Plomo Numerado</span></td>
+						<td><span data-prefix>$</span><span contenteditable>4.84</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Sello de Plomo Numerado</span></td>
+						<td><span data-prefix>$</span><span contenteditable>4.84</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Comprobante de Servicio (pieza)</span></td>
+						<td><span data-prefix>$</span><span contenteditable>6.29</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    <tr>
+						<td class="td-shield-gray"><a class="cut">-</a><span contenteditable>Traslado de valores: <br>
+                            Material Operativo </span></td>
+						<td><span contenteditable>Cincho de Plástico</span></td>
+						<td><span data-prefix>$</span><span contenteditable>3.63</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>$</span><span>0.00</span></td>
+					</tr>
+                    
+                    
+				</tbody>
+			</table>
+
+			<a class="add">+</a>
+
+			
+			<table class="balance">
+				<tr>
+					<th><span contenteditable>Total</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr >
+				
+                    
+					<th style="display:none;"><span contenteditable>Amount Paid</span></th>
+					<td style="display:none;"><span data-prefix>$</span><span contenteditable>0.00</span></td>
+                
+				</tr>
+				<tr>
+					<th style="display:none;"><span contenteditable>Balance Due</span></th>
+					<td style="display:none;"><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+		</article>
+
+		<button class="pdf" onclick=generatePDF()>PDF</button>
+		
+		<aside>
+			
+			<h1><span contenteditable>Comentarios adicionales</span></h1>
+			<div contenteditable>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolorum architecto enim distinctio laborum odit maxime pariatur
+                     beatae quos ea! Dolorum qui provident possimus mollitia ratione error enim. Unde, cupiditate?</p>
+			</div>
+		</aside>
+		
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+	<script>
+		function generatePDF(){
+			var element = document.getElementById('cotizacion');
+html2pdf(element).save("CotizacionPDF");
+		}
+		
+	</script>
+</html>
