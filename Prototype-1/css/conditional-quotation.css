@@ -1,0 +1,14 @@
+
+
+.product{
+    font-weight: bold;
+    text-align: center;
+    background: #EEE;
+    border-color: #BBB;
+    border-radius: 0.25em;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5em;
+    position: relative;
+    text-align: left;
+}
