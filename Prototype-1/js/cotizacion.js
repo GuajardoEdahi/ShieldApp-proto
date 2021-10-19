@@ -66,13 +66,20 @@
 /* ========================================================================== */
 
 function generateTableRow() {
-	var emptyColumn = document.createElement('tr');
+	const emptyColumn = document.createElement('tr');
+	// const subjectClass = document.getElementById("subject");
+	// const topicClass = document.getElementById("topic");
+	// const chapterClass = document.getElementById("chapter")
+	emptyColumn.innerHTML = 
+	'<td><a class="cut">-</a><span ><select   name="subject" id="subject"><option value="" selected="selected">Selecciona un producto</option> </select> </span></td>' +
+	'<td><span><select class="dropdown"  name="topic" id="topic"><option value="" selected="selected">Selecciona un concepto</option> </select></span></td>' +
+	'<td><span><select class="dropdown"  name="chapter" id="chapter"><option value="" selected="selected">Precio</option></select></span></td>' +
+	'<td><span contenteditable>0</span></td>' +
+	'<td><span data-prefix>$</span><span>0.00</span></td>';
 
-	emptyColumn.innerHTML = '<td><a class="cut">-</a><span contenteditable></span></td>' +
-		'<td><span contenteditable></span></td>' +
-		'<td><span data-prefix>$</span><span contenteditable>0.00</span></td>' +
-		'<td><span contenteditable>0</span></td>' +
-		'<td><span data-prefix>$</span><span>0.00</span></td>';
+	// console.log(subjectClass);
+	// console.log(topicClass);
+	// console.log(chapterClass;
 
 	return emptyColumn;
 }
@@ -120,6 +127,7 @@ function updateInvoice() {
 		// get inventory row cells
 		cells = a[i].querySelectorAll('span:last-child');
 
+
 		// set price as cell[2] * cell[3]
 		price = parseFloatHTML(cells[2]) * parseFloatHTML(cells[3]);
 
@@ -146,7 +154,9 @@ function updateInvoice() {
 	// ========================
 
 	var prefix = document.querySelector('#prefix').innerHTML;
-	for (a = document.querySelectorAll('[data-prefix]'), i = 0; a[i]; ++i) a[i].innerHTML = prefix;
+	for (a = document.querySelectorAll('data-prefix'), i = 0; a[i]; ++i) a[i].innerHTML = prefix;
+
+	
 
 	// update price formatting
 	// =======================

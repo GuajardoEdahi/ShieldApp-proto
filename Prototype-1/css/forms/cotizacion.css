@@ -3,7 +3,7 @@
 *
 {
 	border: 0;
-	box-sizing: content-box;
+	/* box-sizing: content-box; */
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
@@ -152,7 +152,7 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 
 /* javascript */
 
-.add, .cut , .pdf
+.add, .cut , .pdf, .add-to-summary
 {
 	border-width: 1px;
 	display: block;
@@ -163,7 +163,7 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 	width: 0.6em;
 }
 
-.add, .cut, .pdf
+.add, .cut, .pdf, .add-to-summary
 {
 	background: #9AF;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
@@ -177,7 +177,7 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 	text-shadow: 0 -1px 2px rgba(0,0,0,0.333);
 }
 
-.add, .pdf { margin: -2.5em 0 0; }
+.add, .pdf, .add-to-summary { margin: -2.5em 0 0; }
 
 .add:hover { background: #00ADEE; }
 
@@ -197,7 +197,20 @@ tr:hover .cut { opacity: 1; }
 @page { margin: 0; }
 
 .pdf{
-	width: 30px;
+	width: 50px;
 }
 
+.add-to-summary{
+	width: 50px;
+}
+
+
+
+.table-title{
+	font-size: x-large;
+}
+
+.dropdown{
+	width:100%
+}
 

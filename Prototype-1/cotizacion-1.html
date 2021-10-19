@@ -1,0 +1,130 @@
+
+<html id="cotizacion">
+	<head>
+		<meta charset="utf-8">
+		<title>Cotizacion</title>
+		<link rel="stylesheet" href="./css/conditionalTest.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/cotizacion.js"></script>
+        <script src="./js/cascadeLogic.js"></script>
+		<script src="./js/cascadeLogic.js"></script>
+		<script src="./js/summary.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+		
+	</head>
+	<body id='cotizacion'>
+		<header>
+			<h1>Cotizacion</h1>
+			
+		</header>
+		<article>
+			<h1>Cliente</h1>
+
+			<address>
+				<p>Servicio de Cotizacion</p>
+			</address>
+
+			<div>
+				
+			</div>
+			
+            
+			<table class="meta">
+                
+				<tr>
+					<th><span contenteditable>Fecha</span></th>
+					<td><span contenteditable>14 de Octubre del 2021</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Total</span></th>
+					<td><span id="prefix" contenteditable>$</span><span>0.00</span></td>
+				</tr>
+			</table>
+        
+
+
+        <form form id="frm_test" class="form-vertical" name="COTIZACION_TEST.php" method="post">
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span contenteditable>Producto</span></th>
+						<th><span contenteditable>Concepto</span></th>
+						<th><span contenteditable>Precio Unitario</span></th>
+						<th><span contenteditable>Cantidad</span></th>
+						<th><span contenteditable>Precio</span></th>
+					</tr>
+				</thead>
+				<tbody>
+                    <tr>
+                        
+                            <td id='product-td'><a class="cut">-</a><span >
+                                <select   name="subject" id="subject">
+                                    <option value="" selected="selected">Selecciona un producto</option>
+                                  </select>
+                            </span></td>
+                            <td><span >
+                                <select class="dropdown"  name="topic" id="topic">
+                                    <option value="" selected="selected">Selecciona un concepto</option>
+                                  </select>
+                            </span></td>
+                            <td><span >
+                                <select class="dropdown"  name="chapter" id="chapter">
+                                    <option value="" selected="selected">Precio</option>
+                                  </select>
+                            </span></td>
+                            <td><span contenteditable>0</span></td>
+                            <td><span data-prefix>$</span><span>0.00</span></td>
+                        </tr>
+                   
+                    
+				</tbody>
+			</table>
+		</form>
+
+			<!-- <a class="add">+</a> -->		
+			<table class="balance">
+				<tr>
+					<th><span contenteditable>Total</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr >
+				
+                    
+					<th style="display:none;"><span contenteditable>Amount Paid</span></th>
+					<td style="display:none;"><span data-prefix>$</span><span contenteditable>0.00</span></td>
+                
+				</tr>
+				<tr>
+					<th style="display:none;"><span contenteditable>Balance Due</span></th>
+					<td style="display:none;"><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+			<button class="add-to-summary" onclick=clone()>Agregar</button>
+		</article>
+
+	
+
+		<button class="pdf" onclick=generatePDF()>PDF</button>
+		
+		<aside>
+			
+			<h1><span contenteditable>Resumen</span></h1>
+			<div class='summary'>
+			</div>
+		</aside>
+		
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+	<script>
+		function generatePDF(){
+			var element = document.getElementById('cotizacion');
+html2pdf(element).save("CotizacionPDF");
+		}
+	</script>
+
+
+</html>
